@@ -4,15 +4,15 @@ This repository implements a Convolutional Neural Network (CNN) model for classi
 
 The CIFAR-10 dataset is a popular benchmark for image classification, containing 60,000 32x32 color images in 10 classes (airplane, car, bird, cat, deer, dog, frog, horse, ship, truck).
 
-# Dependencies:
+## Dependencies:
 TensorFlow , Keras , matplotlib , NumPy , OpenCV 
 
-# Code Structure:
+##  Code Structure:
 
 * CNN_classifier_.ipynb: Contains the core code for model definition, training, evaluation, and prediction.
 * Test_images: Contains 2 random images from internet I finally tested the model on 
 
-# Model Architecture:
+## Model Architecture:
 
 This model uses a sequential architecture with convolutional and dense layers:
 
@@ -25,19 +25,19 @@ This model uses a sequential architecture with convolutional and dense layers:
    * A dense layer with 64 units and ReLU activation for feature extraction.
    * A final dense layer with 10 units and softmax activation for predicting class probabilities.
 
-# Training Process:
+## Training Process:
 
-Optimizer: Adam
-Loss Function: Sparse Categorical Crossentropy
-Metrics: Accuracy
-Epochs: 15 (or adjust based on your experiments)
-Validation Split: A portion of the training data is used for validation to monitor performance during training.
+* Optimizer: Adam
+* Loss Function: Sparse Categorical Crossentropy
+* Metrics: Accuracy
+* Epochs: 15
+* Validation Split: A portion of the training data is used for validation to monitor performance during training.
 
-# Evaluation:
+## Evaluation:
 
 The model achieves an accuracy of 71.37% on the test set. You can also visualize the training and validation loss/accuracy curves over epochs using matplotlib for further analysis.
 
-# Conclusion:
+## Conclusion:
 
 This repository demonstrates a basic CNN approach to CIFAR-10 image classification. You can explore hyperparameter tuning, data augmentation, and more complex architectures for potentially higher accuracy.
 
